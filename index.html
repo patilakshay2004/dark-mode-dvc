@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  
     <title>Document</title>
 </head>
 
@@ -106,53 +108,128 @@
                 </div>
             </section>
 
-            <div class="testimonial-container">
-                <h1>Testimonial</h1>
-                <div class="testimonial" id="testimonial-1">
-                    <img src="https://picsum.photos/100" alt="#">
-                    <p>"This product has changed my life! I couldn't be happier with the results."</p>
-                    <h3>- John Doe</h3>
-                </div>
-                <div class="testimonial" id="testimonial-2">
-                    <img src="https://picsum.photos/100" alt="#">
-                    <p>"Amazing service and support. I highly recommend it to everyone!"</p>
-                    <h3>- Jane Smith</h3>
-                </div>
-                <div class="testimonial" id="testimonial-3">
-                    <img src="https://picsum.photos/100" alt="#">
-                    <p>"A wonderful experience from start to finish. Five stars!"</p>
-                    <h3>- Michael Brown</h3>
-                </div>
-                <div class="buttons">
-                    <button id="prev"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button id="next"><i class="fa-solid fa-arrow-right"></i></button>
+            <!-- testimonial-section -->
+            <div class="slider-section">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="images/1.png" alt="Image 1">
+                            <span>John deo</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae atque explicabo magni architecto.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="images/2.jpg" alt="Image 2">
+                            <span>John deo</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae atque explicabo magni architecto.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="images/3.webp" alt="Image 3">
+                            <span>John deo</span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae atque explicabo magni architecto.</p>
+                        </div>
+                    </div>
+                    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="next" onclick="moveSlide(1)">&#10095;</button>
                 </div>
             </div>
 
+            <!-- product-section -->
             <div class="product-section">
-                <h2>Our Products</h2>
-                <div class="product-container">
-                    <div class="product active">
-                        <img src="https://www.oneplus.com/content/dam/oasis/page/2023/nav/nav-larry-black.png" alt="#">
-                        <p>Lorem ipsum dolor sit amet, labore et dolore magna aliqua.</p>
-                        <button>Buy Now</button>
+                <div class="product-slider">
+                    <div class="slider-wrapper">
+                        <div class="product-slide">
+                            <img src="https://www.oneplus.com/content/dam/oasis/page/2023/nav/nav-larry-black.png" alt="#">
+                            <div class="product-btn">
+                               <span>buy now</span>
+                               <span>add cart</span>
+                            </div>
+                        </div>
+                        <div class="product-slide">
+                            <img src="https://image01-in.oneplus.net/ebp/202404/07/1-M00-52-A2-CpgM7WYR-viATDPnAATPnD-sVqo964.png?x-amz-process=image/format,webp/quality,Q_80" alt="#">
+                            <div class="product-btn">
+                                <span>buy now</span>
+                                <span>add cart</span>
+                             </div>
+                        </div>
+                        <div class="product-slide">
+                            <img src="https://media.croma.com/image/upload/v1662436253/Croma%20Assets/Communication/Mobiles/Images/247071_s7gm12.png" alt="#">
+                            <div class="product-btn">
+                                <span>buy now</span>
+                                <span>add cart</span>
+                             </div>
+                        </div>
                     </div>
-                    <div class="product">
-                        <img src="https://image01-in.oneplus.net/ebp/202404/07/1-M00-52-A2-CpgM7WYR-viATDPnAATPnD-sVqo964.png?x-amz-process=image/format,webp/quality,Q_80" alt="#">
-                        <p>"Ut enim ad minim veniam, quis nostrud ea commodo consequat."</p>
-                        <button>Buy Now</button>
-                    </div>
-                    <div class="product">
-                        <img src="https://media.croma.com/image/upload/v1662436253/Croma%20Assets/Communication/Mobiles/Images/247071_s7gm12.png" alt="#">
-                        <p>"Duis aute irure dolor in reprehenderit in nulla pariatur."</p>
-                        <button>Buy Now</button>
-                    </div>
-                </div>
-                <div class="controls">
                     <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
                     <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
+               </div>
+
+            <div class="video-section">
+                <h2>video</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                </p>
+                <iframe  src="https://www.youtube.com/embed/UrsmFxEIp5k?si=B7Ffl_N8WuecfDN_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
+
+            <div class="team-section">
+                <div class="team-title">
+                    <h2>Team title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div class="team-info">
+                   <div class="team-logo">
+                    <img src="./images/1.png" width="55px" height="55px" alt="#">
+                   </div>
+                    <div class="team-discription">
+                        <p>Sitesoch</p>
+                        <span>Lorem ipsum dolor sit amet consectetur  Expedita?</span>
+                       
+                    </div>
+
+                </div>
+            </div>
+           
+            <div class="time-section">
+                <div class="dropdown">
+                    <button class="dropbtn"><i class="bx bx-time"></i> <span>Opening Hours</span></button>
+                    <div class="dropdown-content">
+                        <div class="time">
+                            <a href="#">Monday</a>
+                            <p>10:00 AM - 5:00 AM</p>
+                        </div>
+                        <div class="time">
+                            <a href="#">Tuesday</a>
+                            <p>10:00 AM - 5:00 AM</p>
+                        </div>
+                        <div class="time">
+                            <a href="#">Wednesday</a>
+                            <p>10:00 AM - 5:00 AM</p>
+                        </div>
+                        <div class="time">
+                            <a href="#">Thursday</a>
+                            <p>10:00 AM - 5:00 AM</p>
+                        </div>
+                        <div class="time">
+                            <a href="#">Friday</a>
+                            <p>10:00 AM - 5:00 AM</p>
+                        </div>
+                        <div class="time">
+                            <a href="#">Saturday</a>
+                            <p>10:00 AM - 5:00 AM</p>
+                        </div>
+                        <div class="time">
+                            <a href="#">Sunday</a>
+                            <p>10:00 AM - 5:00 AM</p>
+                        </div>
+            
+                    </div>
+                </div>
+            
+                
+            </div>
+
+           
 
             <footer>
                 <p>© Sitesoch.in. All rights reserved</p>
@@ -164,41 +241,38 @@
     
     <!--========== MAIN JS ==========-->
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     
-
+    <!-- testimonial-section -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const testimonials = document.querySelectorAll('.testimonial');
-            let currentTestimonial = 0;
-
-            const updateTestimonials = () => {
-                testimonials.forEach((testimonial, index) => {
-                    testimonial.classList.toggle('active', index === currentTestimonial);
-                });
-            };
-
-            document.getElementById('prev').addEventListener('click', () => {
-                currentTestimonial = (currentTestimonial === 0) ? testimonials.length - 1 : currentTestimonial - 1;
-                updateTestimonials();
-            });
-
-            document.getElementById('next').addEventListener('click', () => {
-                currentTestimonial = (currentTestimonial === testimonials.length - 1) ? 0 : currentTestimonial + 1;
-                updateTestimonials();
-            });
-
-            updateTestimonials();
-        });
-
-
-        document.getElementById('theme-toggle').addEventListener('click', function() {
-        let dark = document.body.classList.toggle('dark-mode');
-
-       
-        });        
+        let currentSlide = 0;
+    
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.slide');
+            if (index >= slides.length) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = slides.length - 1;
+            } else {
+                currentSlide = index;
+            }
+            const offset = -currentSlide * 100;
+            document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+        }
+    
+        function moveSlide(step) {
+            showSlide(currentSlide + step);
+        }
+    
+        // Auto slide every 3 seconds
+        setInterval(() => {
+            moveSlide(1);
+        }, 3000);
     </script>
-
-<script>
+    
+    <!-- product-section -->
+    <!-- <script>
     const product = document.querySelectorAll('.product');
 const prevButton = document.querySelector('.prev');
 const nextButton = document.querySelector('.next');
@@ -223,7 +297,69 @@ showProduct(currentIndex);
 // Initial display
 showProduct(currentIndex);
 
-</script>
+    </script> -->
+
+    <!-- time-section -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const dropbtn = document.querySelector('.dropbtn');
+        dropbtn.addEventListener('click', function() {
+            const dropdownContent = document.querySelector('.dropdown-content');
+            dropdownContent.classList.toggle('show');
+        });
+    });
+
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            const dropdowns = document.getElementsByClassName('dropdown-content');
+            for (let i = 0; i < dropdowns.length; i++) {
+                const openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+    </script>
+
+    <!-- product-section -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const sliderWrapper = document.querySelector('.slider-wrapper');
+            const slides = document.querySelectorAll('.product-slide');
+            const prevButton = document.querySelector('.prev');
+            const nextButton = document.querySelector('.next');
+
+            let currentIndex = 0;
+
+            function showSlide(index) {
+                if (index >= slides.length) {
+                    currentIndex = 0;
+                } else if (index < 0) {
+                    currentIndex = slides.length - 1;
+                } else {
+                    currentIndex = index;
+                }
+                const offset = -currentIndex * 100;
+                sliderWrapper.style.transform = `translateX(${offset}%)`;
+            }
+
+            prevButton.addEventListener('click', function () {
+                showSlide(currentIndex - 1);
+            });
+
+            nextButton.addEventListener('click', function () {
+                showSlide(currentIndex + 1);
+            });
+
+            // Auto slide
+            setInterval(function () {
+                showSlide(currentIndex + 1);
+            }, 3000);
+        });
+    </script>
+
+
 
     
 </body>
