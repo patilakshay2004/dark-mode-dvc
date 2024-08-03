@@ -351,156 +351,63 @@ a{
 }
 
 
-/* testimonial-section */
-.testimonial-container {
+/* video-section */
+.video-section{
+  /* background-color: #007bff; */
   animation: slideFromTop 2s ease-in-out forwards;
-  opacity: 0;
-  border-radius: 1rem;
   box-shadow: 2px 2px 5px var(--title-color);
-  padding: 1rem 2rem;
-  text-align: center;
+  border-radius: 1rem;
+  line-height: 1.2rem;
   margin-bottom: 2rem;
 }
-
-.testimonial-container h1 {
-  font-size: 1.75rem;
-  font-weight: 700;
+.video-section iframe{
+  width: 100%;
+  height: 315px;
+  padding: 0.5rem;
 }
-
-.testimonial {
-  display: none;
-}
-
-.testimonial img {
-  border-radius: 50%;
-}
-
-.testimonial.active {
-  display: block;
-}
-
-h3 {
-  margin-top: 10px;
-  font-weight: normal;
-}
-
-.buttons {
-  margin-top: 20px;
-}
-
-.buttons button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 0.9rem 1rem;
-  cursor: pointer;
-  border-radius: 50%;
-  margin: 0 10px;
-   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.buttons button:hover {
-  background-color: #0056b3;
-}
-
-
-.product-section {
+.team-section{
   animation: slideFromTop 2s ease-in-out forwards;
   box-shadow: 2px 2px 5px var(--title-color);
-  width: 100%;
-  margin: 50px auto;
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   border-radius: 1rem;
+  margin-bottom: 2rem;
+  text-align: start;
+  padding: 1rem;
 }
-
-.product-section h2 {
-  margin-bottom: 20px;
+.team-title{
+  text-align: center;
+  line-height: 0.5rem;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.941);
 }
-
-.product-container {
-  position: relative;
-  overflow: hidden;
+.team-title p{
+  font-size: 0.8rem;
 }
-
-.product {
-  border: 1px solid var(--title-color);
-  border-radius: 0.4rem;
-  width: 200px;
-  display: none;
+.team-info{
+  padding-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  line-height: 0;
+  align-items: start;
 }
-
-.product.active {
-  display: block;
+.team-logo img{
+  border-radius: 50%;
+}
+.team-discription{
   display: flex;
   flex-direction: column;
   align-items: start;
+ 
 }
-.product img{
-  width: 100%;
-}
-.product p {
-  font-size: 0.875rem;
-  padding: 0 0.8rem;
-  text-align: start;
-}
-
-.product button {
-  margin-left:0.8rem;
-  border: none;
-  border-radius: 0.2rem;
+.team-discription span{
   font-size: 0.8rem;
-  padding: 0.4rem 0.8rem;
-  margin-bottom: 1rem;
-  color: var(--title-color);
-  background-color: #ff7236;
-}
-
-.controls {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.controls button {
-  background: #007BFF;
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  padding: 10px 12px;
-  margin: 0 10px;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.controls button:hover {
-  background: #0056b3;
+  line-height: 0.895rem;
 }
 
 
-/* footer */
-footer {
+footer{
   font-size: 1rem;
   text-align: center;
   color: var(--text-color);
   margin-bottom: 4rem;
-
 }
 
 @keyframes slideFromTop {
@@ -560,3 +467,197 @@ footer {
   }
 }
 
+
+.time-section{
+  animation: slideFromTop 2s ease-in-out forwards;
+  box-shadow: 2px 2px 5px var(--title-color);
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.dropdown {
+     width:100%;
+     position: relative;
+ }
+
+ .dropbtn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 1rem;
+     text-align: start;
+     width: 100%;
+     padding: 16px;
+     font-size: 16px;
+     border: none;
+     cursor: pointer;
+     background-color:var(--body-color);
+     color: var(--text-color);
+
+ }
+ .dropbtn i{
+  font-size: 1.5rem;
+ }
+
+ .dropdown-content {
+     border-radius: 0 0 1rem 1rem;
+     display: none;
+     width: 100%;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+     z-index: 1;
+ }
+
+ .dropdown-content a {
+    color: var(--text-color);
+     padding: 12px 16px;
+     text-decoration: none;
+     display: block;
+ }
+
+ .show {
+     display: block;
+ }
+
+ .time{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 0 0.5rem;
+ }
+ 
+
+ /*testimonial-container*/
+ .slider-section{
+  animation: slideFromTop 2s ease-in-out forwards;
+  box-shadow: 2px 2px 5px var(--title-color);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+}
+
+.slider {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+}
+
+.slider button {
+  position: absolute;
+  top: 35%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.767);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.prev {
+  left: 10px;
+  background-color: #007bff;
+}
+
+.next {
+  right: 10px;
+  background-color: #007bff;
+}
+
+button:focus {
+  outline: none;
+}
+
+.slide span{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.slide p{
+  font-size: 0.875rem;
+}
+
+
+
+/* product-section */
+.product-section{
+  animation: slideFromTop 2s ease-in-out forwards;
+  box-shadow: 2px 2px 5px var(--title-color);
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+.product-slider {
+  border-radius: 1rem;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.product-slide {
+  border-radius: 1rem;
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.product-slide img {
+  width: 80%;
+}
+
+.product-section button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  padding: 0.7rem 0.8rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+button.prev {
+  left: 10px;
+}
+
+button.next {
+  right: 10px;
+}
+.product-btn{
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.product-btn span{
+  cursor: pointer;
+  background-color: #ff7236;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+}
